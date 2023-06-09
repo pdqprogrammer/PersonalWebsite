@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-15267255-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-15267255-1');
+        </script>
+
+        <script src="./js/mobilenav.js"></script>
+
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/mobile.css">
+        <link rel="stylesheet" href="./css/desktop.css">
+
+        <link rel="icon" href="./images/favicon.png" sizes="16x16" type="image/png">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Poiret+One&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+        <title>Paul D Quinones - GAME TITLE</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body onresize="hideMobNav()">
+        <nav>
+            <div id="desk_btn_bar">
+                <a class="btn_main" href="./index.html"><img src="./images/logo.png"/></a>
+                <a class="btn" href="./index.html#projects_section"><img src="./images/games.png"/></a>
+                <a class="btn" href="./index.html#work_section"><img src="./images/experience.png"/></a>
+                <a class="btn" href="./index.html#about_section"><img src="./images/blog.png"/></a>
+                <a class="btn" href="mailto:paulq@pauldquinones.com"><img src="./images/email.png"/></a>
+            </div>
+
+            <div id="mob_btn_bar">
+                <a class="btn" href="javascript:void(0);" class="icon" onclick="navBarOnOff()">
+                    <img src="./images/mobileNav.png"/>
+                </a>
+            </div>
+
+            <div id="mob_btn_block">
+                <div class="mob_nav_btn">
+                    <a href="./index.html" onclick="hideMobNav()">Home</a>
+                </div>
+                <hr class="blog_split">
+                <div class="mob_nav_btn">
+                    <a href="./index.html#projects_section" onclick="hideMobNav()">Projects</a>
+                </div>
+                <hr class="blog_split">
+                <div class="mob_nav_btn">
+                    <a href="./index.html#work_section" onclick="hideMobNav()">Experience</a>
+                </div>
+                <hr class="blog_split">
+                <div class="mob_nav_btn">
+                    <a href="./index.html#about_section" onclick="hideMobNav()">About</a>
+                </div>
+                <hr class="blog_split">
+                <div class="mob_nav_btn">
+                    <a href="mailto:paulq@pauldquinones.com" onclick="hideMobNav()">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+
+        <div id="splash_image" style="background-image: url('./images/bg_0002.jpg')">
+            <!--This section will hold the main splash screen and button to "enter" the site-->
+                <div id="splash_titles" class="darken-bg">
+                    <h1 class="viewport-top-pad-10">
+                        Game Title
+                    </h1>
+                        <h3 class="viewport-top-pad-15">Roles:</h3>
+                </div>
+        </div>
+
+        <div id="projects_section" class="background-dark">
+            <!--This section will hold details on projects done and images that click to each projects page-->
+            <div class="content-padding">
+                <h1>About the Game</h1>
+                <p>
+                    Details on the game
+                </p>
+                <h1>Code if Available</h1>
+                <p>
+                    Code breakdown if there is one
+                </p>
+                <h1>Video if Available</h1>
+                <p>
+                    Embed Video here
+                </p>
+                <h1>Project Links:</h1>
+                <ul>
+                    <li>Github: </li>
+                    <li>GGJ: </li>
+                    <li>Youtube: </li>
+                </ul>
+            </div>
+        </div>
+        
+        <footer>
+            <div id="footer_copy">&copy;2010 PDQ</div>
+            <div id="footer_logo"><img id="footer_logo_img" src="./images/footer_logo.png" alt="footer logo"/></div>
+            <div id="footer_social">
+                <a class="btn_social" href="https://github.com/pdqprogrammer" target="_blank"><img src="./images/logos/social_github.png"/></a>
+                <a class="btn_social" href="https://www.linkedin.com/in/pauldquinones/" target="_blank"><img src="./images/logos/social_linkedin.png"/></a>
+                <a class="btn_social" href="https://www.youtube.com/channel/UC3r3azNfrRCH4Scp7S4X2uA" target="_blank"><img src="./images/logos/social_youtube.png"/></a>
+            </div>
+        </footer>
+    </body>
+</html>

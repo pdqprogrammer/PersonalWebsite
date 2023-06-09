@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-15267255-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-15267255-1');
+        </script>
+
+        <script src="./js/mobilenav.js"></script>
+
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/mobile.css">
+        <link rel="stylesheet" href="./css/desktop.css">
+
+        <link rel="icon" href="./images/favicon.png" sizes="16x16" type="image/png">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Poiret+One&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+        <title>Paul D Quinones - Game Developer Portfolio</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body onresize="hideMobNav()">
+        <nav>
+            <div id="desk_btn_bar">
+                <a class="btn_main" href="./index.html"><img src="./images/logo.png"/></a>
+                <a class="btn" href="./index.html#about_section"><img src="./images/blog.png"/></a>
+                <a class="btn" href="./index.html#projects_section"><img src="./images/games.png"/></a>
+                <a class="btn" href="./index.html#work_section"><img src="./images/email.png"/></a>
+            </div>
+
+            <div id="mob_btn_bar">
+                <a class="btn" href="javascript:void(0);" class="icon" onclick="navBarOnOff()">
+                    <img src="./images/mobileNav.png"/>
+                </a>
+            </div>
+
+            <div id="mob_btn_block">
+                <div class="mob_nav_btn">
+                    <a href="./index.html" onclick="hideMobNav()">Home</a>
+                </div>
+                <hr class="blog_split">
+                <div class="mob_nav_btn">
+                    <a href="./index.html#about_section" onclick="hideMobNav()">About</a>
+                </div>
+                <hr class="blog_split">
+                <div class="mob_nav_btn">
+                    <a href="./index.html#projects_section" onclick="hideMobNav()">Projects</a>
+                </div>
+                <hr class="blog_split">
+                <div class="mob_nav_btn">
+                    <a href="./index.html#work_section" onclick="hideMobNav()">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <div id="intro_section">
+            <!--This section will hold the main splash screen and button to "enter" the site-->
+            <a href="./index.html#projects_section" class="no-underline">
+                <div id="intro_titles" class="darken-bg">
+                    <h1 class="viewport-top-pad-25">
+                        Paul D Quinones<br>
+                    </h1>
+                        <h2>
+                            The Portfolio
+                        </h2>
+                        <h2 class="viewport-top-pad-25">Press to Play</h2>
+                </div>
+            </a>
+        </div>
+
+        <div id="about_section" class="background-light">
+            <!--This section will talk about who I am, what interests me, and what types of projects I am working on-->
+            <div class="content-padding">
+                <h1>Level 1: About</h1>
+                <p id="youtube">
+                    <img src="./images/portrait.jpg" class="about-image"/>
+                </p>
+                <h3>"Less but better." -Dieter Rams</h3>
+                <h3>"Become acquainted with every art." -Miyamoto Musashi</h3>
+                <h2>About Paul</h2>
+                <p>
+                    Hi Everyone! I am Paul Quinones and you may be wondering who I am...Well let me tell you about myself! Followed up by some of the projects I have worked on.<br/>
+                    <br/>
+                    I am a Game Developer interested in how games and technology can bring people together. I focus on creating game mechanics / systems that allow for sharing different experiences. As a Game Developer the goal is to create experiences that can bring people together. Part of this is making games that allow people to share experiences that may not be familiar. My goal is to help others share stories and find their own creative outlets to excel in.<br/>
+                    <br/>
+                    "Less But Better" is a quote that resonates with me. The idea of being able to bring fun to others with something is not expansive like an MMO but still polished. A game can have an impact without over-complicating mechanics. That is one of the driving factors behind the games I work on.<br/>
+                </p>
+                
+            </div>
+        </div>
+
+        <div id="projects_section" class="background-dark">
+            <!--This section will hold details on projects done and images that click to each projects page-->
+            <div class="content-padding">
+                <h1>Level 2: Projects</h1>
+                    <p>
+                        Welcome to the portfolio site of Paul Quinones. A place where you can see projects he has worked on along with some details about him.<br/>
+                        <br/>
+                        Featured projects are games with mechanics like platforming to FPS decorator to bear driving. 
+                    </p>
+
+                    <h2>Projects - Developer</h2>
+                    <p class="projects">
+                        <img src="./images/games/hyperbimbobeats.png" class="proj-image"/>
+                        <h3>Hyper Bimbo Beats</h3>
+                        Hyper Bimbo Beats is a Mobile Rhythm Survival Game released on iOS and Android!<br>
+                        <h4>Published by Super Pose Press & Created by Plunder Inc</h4>
+                        Hyper Bimbo Beats was built in Unity for mobile devices. My Role as Game Play Programmer / Architect was to create systems for managing the game to the beat of Music. This involved creating a Beat Management system that handled movement, animation, and audio for the game. Other systems involved using the Unity input system together with Game Events to trigger user dragging and releasing within the game. As the sole programmer the main focus was to build tools and structures for Designers, Artists, and Audio Engineers to leverage in putting the game together.<br/>
+                        
+                        <div id="projects-links-container">
+                            <p class="project-links">
+                                Download Here:<br/>
+                                <a href="https://paulprograms.itch.io/hyper-bimbo-beats-playtest" target="_blank">
+                                    <img src="./images/logos/apple.png" class="project-click"/>
+                                </a>
+                                <a href="https://play.google.com/store/apps/details?id=com.plunderinc&hl=en-US" target="_blank">
+                                    <img src="./images/logos/googleplay.png" class="project-click"/>
+                                </a>
+                            </p>
+                        </div>
+                        <br class="float_img_clear"/>
+                    </p>
+                    <div class="spacer"></div>  
+                    <hr/>
+                    <p class="projects">
+                        <img src="./images/games/clothingtechsoftware.png" class="proj-image"/>
+                        <h3>Garment Digital Twin</h3>
+                        Garment Digital Twin is Fashion Design Software focused on reducing waste!<br>
+                        <h4>Published by Clothing Tech LLC</h4>
+                        Garment Digital Twin is Fashion Design Software built for both Windows and Mac systems. My role as a Software Developer on this project was to work together with UI/UX Designers to build out core functionality. This involved building functionality in Unity to allow users to create garments and add on various features such as fabrics and buttons. Part of the work involved setting up Shaders through Shader Graph and building out code that would in realtime map out the different textures for fabrics on to a Garment. I also build out capabilities allowing users to import 3D files from cloud based systems into the application mapping out 3D data for visualization.
+                        
+                        <div id="projects-links-container">
+                            <p class="project-links">
+                                Download Here:<br/>
+                                <a href="https://www.clothingtech.com/" target="_blank">
+                                    <img src="./images/logos/clothingtech.jpg" class="project-click"/>
+                                </a>
+                            </p>
+                        </div>
+                        <br class="float_img_clear"/>
+                    </p>
+                    <div class="spacer"></div>  
+                    <hr/>
+                    <p class="projects">
+                        <img src="./images/games/AlDente.png" class="proj-image"/>
+                        <h3>Al Dente</h3>
+                        Al Dente The Pasta Escape Platformer for Desktop and Web!<br>
+                        <h4>Created by Plunder Inc</h4>
+                        Al Dente is a 2D Platformer created using Unity for both Web and Windows. My role as programmer was to build out the core functionality of the different jumping platforms, game manager to handle different states, plugging in audio triggers, and creating tools to streamline design work. Part of the work done involved creating platform behaviors that allowed platforms to crumble and destroy or just rotate in place or even drop on a touch. Fields were exposed to allow the Audio Engineer to plug in sound effects created through FMOD.<br/>
+                        
+                        <div id="projects-links-container">
+                            <p class="project-links">
+                                Play Here:<br/>
+                                <a href="https://enaree.itch.io/al-dente" target="_blank">
+                                    <img src="./images/logos/itchio.png" class="project-click"/>
+                                </a>
+                            </p>
+                        </div>
+                        <br class="float_img_clear"/>
+                    </p>
+                    <div class="spacer"></div>  
+                    <hr/>
+                    <p class="projects">
+                        <img src="./images/games/decorhero.jpg" class="proj-image"/>
+                        <h3>Decor Hero</h3>
+                        Decor Hero The FPS Sandbox Decorating Game!<br>
+                        <h4>Created by Paul Q - Solo Dev</h4>
+                        Decor Hero was built for Windows PCs during the Global Game Jam making use of Unity. As the sole developer on this game I was responsible for building out core systems such as changing ammo, shooting paint onto walls plus furniture, and laying down flooring. This FPS features standard mechanics seen in typical FPS games such as shooting different types of ammo, jumping plus moving, and a HUD to inform the players on what design tools they are using to decorate this sandbox of a room.<br/>
+                        
+                        <div id="projects-links-container">
+                            <p class="project-links">
+                                Download Here:<br/>
+                                <a href="https://globalgamejam.org/2019/games/decor-hero" target="_blank">
+                                    <img src="./images/logos/ggj.png" class="project-click"/>
+                                </a>
+                            </p>
+                        </div>
+                        <br class="float_img_clear"/>
+                    </p>
+                    <div class="spacer"></div>  
+                    <hr/>
+                    <p class="projects">
+                        <img src="./images/games/SecamJam.jpg" class="proj-image"/>
+                        <h3>Canceled Noise</h3>
+                        Survive The Twisted Grid Puzzler!<br>
+                        <h4>Created by Paul Q - Solo Dev</h4>
+                        Canceled Noise is a simple grid based game where players have to avoid getting caught in lit up squares long enough or it is game over. The game was built in Unity for Web making using of the Unity Input Manager. As the Sole programmer I was responsible for building out the basic game mechanics such as moving from square to square and changing between game states.<br/>
+                        
+                        <div id="projects-links-container">
+                            <p class="project-links">
+                                Play Here:<br/>
+                                <a href="https://paulprograms.itch.io/canceled-noise" target="_blank">
+                                    <img src="./images/logos/itchio.png" class="project-click"/>
+                                </a>
+                            </p>
+                        </div>
+                        <br class="float_img_clear"/>
+                    </p>
+                    <div class="spacer"></div>    
+                    <br class="float_img_clear"/>       
+                    <hr/><hr/>
+
+                    <h2>Projects - Writing</h2>
+                    <p class="projects">
+                        <a href="https://www.dmsguild.com/product/424425/Collective-Encounters-Vol-VII" target="_blank">
+                            <img src="./images/games/collectiveEncounters.png" class="proj-image"/>
+                        </a>
+                        <h3>Collective Encounters Vol. VII</h3>
+                        5th Edition Encounter - "Sound of Sweet Workplace..."<br>
+                        <h4>Published by Storytelling Collective</h4>
+                        2023 Paul featured in a compilation of Dungeon and Dragons 5e Encounters. In "Sound of Sweet Workplace...", players assist a writer looking for the perfect workplace. Check out the compilation here: <a href="https://www.dmsguild.com/product/424425/Collective-Encounters-Vol-VII" target="_blank">https://www.dmsguild.com/product/424425/Collective-Encounters-Vol-VII</a><br/>
+                        
+                        <div id="projects-links-container">
+                            <p class="project-links">
+                                Download Here:<br/>
+                                <a href="https://www.dmsguild.com/product/424425/Collective-Encounters-Vol-VII" target="_blank">
+                                    <img src="./images/logos/DmsGuild.png" class="project-click"/>
+                                </a>
+                            </p>
+                        </div>
+                    </p>
+                    <div class="spacer"></div> 
+                    <br class="float_img_clear"/>
+                    <hr/><hr/>
+
+                    <h2>PaulPrograms on YouTube</h2>
+                    <p class="projects">
+                        <a href="https://paulprograms.games/" target="_blank">
+                            <img src="./images/games/PaulProgramsYouTube.jpg" class="proj-image"/>
+                        </a>
+                        <br/>
+                        <a href="https://paulprograms.games/" target="_blank">PaulPrograms</a> PaulPrograms</a> goal is to provide a look behind the scenes of game development to help developers out there learn more about game mechanics.<br/>
+                       
+                        <div id="projects-links-container">
+                            <p class="project-links">
+                                Watch Here:<br/>
+                                <a href="https://paulprograms.games/" target="_blank">
+                                    <img src="./images/logos/youtubered.png" class="project-click"/>
+                                </a>
+                            </p>
+                        </div>
+                        <br class="float_img_clear"/>
+                    </p>
+            </div>
+        </div>
+
+        <div id="work_section" class="background-light">
+            <!--This section will hold details about experience, links to professional networks, and click out to resume-->
+            <div class="content-padding">
+                <h1>Level 3: Working Together</h1>
+
+                <h2>Contact</h2>
+                <p>
+                    If you want to chat or learn about Photoshop for Evil: <a href="mailto:paulq@pauldquinones.com">Email</a> or <a href="https://www.linkedin.com/in/pauldquinones-software-engineer/" target="_blank">LinkedIn</a>
+                </p>
+
+                <h2>Professional Links</h2>
+                <ul>
+                    <li><a href="mailto:paulq@pauldquinones.com">Email</a></li>
+                    <li><a href="https://www.linkedin.com/in/pauldquinones-software-engineer/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://github.com/pdqprogrammer" target="_blank">Github</a></li>
+                    <li><a href="./downloads/PaulDQuinonesResume2023.pdf" target="_blank">Resume</a></li>
+                    <li><a href="https://paulprograms.itch.io/" target="_blank">itch.io</a></li>
+                    <li><a href="https://globalgamejam.org/users/PaulPrograms/" target="_blank">Global Game Jam</a></li>
+                </ul>
+
+                <h3>Highlights</h3>
+                <ul>
+                    <li>Global Game Jams: Outside of work I have always been into Game Jams. Over the years I have taken part in over 10 Global Game Jam. It has been a great opportunity to work with others, learn, and make something in a 48 hour time frame. This has even lead to winning awards for local venues.</li>
+                    <br/>
+                    <li>YouTube Channel - <a href="http://paulprograms.games/" target="_blank">PaulPrograms</a>: I have an interest in learning new things and want to share my experiences with others. That is why I decided to start a YouTube channel focused on teaching Game Mechanics to others. The videos break down the mechanics and presents ways to execute them through design or code. PaulPrograms focuses on tools and content for use in learning Game Development.</li>
+                </ul>
+
+                <h3>Awards</h3>
+                <ul>
+                    <li>GGJ 2023: 2nd Place UX / UI</li>
+                    <li>GGJ 2019: Highest APM Award (Microsoft + Playcrafting)</li>
+                    <li>GGJ 2010: Best Game at Venue (NYU Game Center)</li>
+                </ul>  
+            </div>
+        </div>
+        
+        <footer>
+            <div id="footer_copy">&copy;2010 PDQ</div>
+            <div id="footer_logo"><img id="footer_logo_img" src="./images/footer_logo.png" alt="footer logo"/></div>
+            <div id="footer_social">
+                <a class="btn_social" href="https://github.com/pdqprogrammer" target="_blank"><img src="./images/logos/social_github.png"/></a>
+                <a class="btn_social" href="https://www.linkedin.com/in/pauldquinones-software-engineer/" target="_blank"><img src="./images/logos/social_linkedin.png"/></a>
+                <a class="btn_social" href="http://paulprograms.games/" target="_blank"><img src="./images/logos/social_youtube.png"/></a>
+            </div>
+        </footer>
+    </body>
+</html>
